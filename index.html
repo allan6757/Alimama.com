@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sole Ties</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="main-navbar">
+    <div class="navbar-container">
+      <a href="#products-section" class="nav-link">Products</a>
+      <a href="#shopped-section" class="nav-link">Shopped Items</a>
+      <a href="#about-section" class="nav-link">About</a>
+      <button id="cart-btn" aria-label="View cart" class="cart-nav-btn">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </button>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>ALIMAMA market</h1>
+    <p></p>
+  </header>
+
+  <main>
+    <!-- Products Section -->
+    <section id="products-section">
+      <div class="products-header">
+        <h2>Available products</h2>
+      </div>
+      <div id="product-list" class="products-grid"></div>
+    </section>
+
+    <!-- Shopped Items Section -->
+    <section id="shopped-section" class="hidden">
+      <h2>Shopped Items</h2>
+      <div id="shopped-list" class="products-grid"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about-section" class="hidden">
+      <h2>About Alimama</h2>
+      <p>
+        welcome to Alimama,your trusted online destination for the latest products in the market.
+        We're passionate about quality,convenience and confidence.That's why we source our products from trusted brands and offer them to you at competitive prices.
+      </p>
+      <img src="https://i.pinimg.com/736x/78/55/bf/7855bf4cce24b63a4c7382bd1ed7bc4e.jpg" alt="Sneaker display">
+      <div class="social-links">
+        <a href="https://tiktok.com/@yourusername" target="_blank" aria-label="TikTok">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/tiktok.svg" alt="TikTok" class="social-icon">
+        </a>
+        <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/instagram.svg" alt="Instagram" class="social-icon">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Message Popup -->
+  <div id="message" class="hidden"></div>
+
+  <!-- Cart Sidebar -->
+  <aside id="cart-sidebar" class="hidden" aria-label="Shopping cart">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total"></p>
+      <button id="close-cart" aria-label="Close cart">Close</button>
+    </div>
+  </aside>
+
+  <script src="index.js"></script>
+</body>
+</html>
